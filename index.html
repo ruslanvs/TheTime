@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function time (HOUR, MINUTE, PERIOD) {
+            var HOUR = 8;
+            var MINUTE = 20;
+            var PERIOD = "PM";
+            var NEXTHOUR = HOUR + 1;
+
+                if (MINUTE < 30) {
+                    if (PERIOD == "AM") {
+                    console.log ("It is just after " + HOUR + " in the morning");
+                    }
+                    else {
+                        console.log ("It is just after " + HOUR + " in the evening");
+                    }
+                }
+
+                if (MINUTE > 30) {
+                    if (PERIOD == "AM") {       
+                    console.log ("It is almost " + NEXTHOUR + " in the morning");
+                    }
+                    else {
+                        console.log ("It is almost " + NEXTHOUR + " in the evening");
+                    }
+                }
+            // console.log (HOUR, MINUTE, PERIOD)
+        }
+        time ();
+    </script>
+    
+</body>
+</html>

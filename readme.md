@@ -1,0 +1,1 @@
+This is my educational assignment at Coding Dojo. Basics of JavaScript.
